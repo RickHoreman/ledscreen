@@ -1,0 +1,5 @@
+HEADERS += ledscreen.hpp
+HEADERS += ledwindow.hpp
+HEADERS += ledstrip.hpp
+
+SEARCH += $(RELATIVE)/library

@@ -1,0 +1,94 @@
+\hypertarget{classledscreen_1_1WS2812B}{}\section{ledscreen\+:\+:W\+S2812B Class Reference}
+\label{classledscreen_1_1WS2812B}\index{ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}}
+
+
+Base class for a \hyperlink{classledscreen_1_1WS2812B}{W\+S2812B} L\+ED strip.  
+
+
+
+
+{\ttfamily \#include $<$ledstrip.\+hpp$>$}
+
+
+
+Inheritance diagram for ledscreen\+:\+:W\+S2812B\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classledscreen_1_1WS2812B_aad8aa07db255de9439972e7e5689836d}{W\+S2812B} (hwlib\+::pin\+\_\+out \&pin, const unsigned int length)
+\begin{DoxyCompactList}\small\item\em Constructor for base \hyperlink{classledscreen_1_1WS2812B}{W\+S2812B} class. \end{DoxyCompactList}\item 
+void \hyperlink{classledscreen_1_1WS2812B_a6a2ebfd923258e9e23d278ff41d875bf}{draw} (unsigned int pos, int rgb\+Hex)
+\begin{DoxyCompactList}\small\item\em Basic draw function for rgb\+Hex values. \end{DoxyCompactList}\item 
+void \hyperlink{classledscreen_1_1WS2812B_a500df20b730204ccc9ab7a79bbf6b5d4}{draw} (unsigned int pos, int R, int G, int B)
+\begin{DoxyCompactList}\small\item\em Basic draw function for R\+GB values. \end{DoxyCompactList}\item 
+void \hyperlink{classledscreen_1_1WS2812B_ad30d0950ef865d72ebe2a0b0fe1399e2}{flush} ()
+\begin{DoxyCompactList}\small\item\em Flushes draw-\/buffer to ledstrip. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classledscreen_1_1WS2812B_a79e2b0da57c6ff10a95de5751d97d342}{get} (const unsigned int \&index)
+\begin{DoxyCompactList}\small\item\em Getter for pixel colour values. Takes pixel index. Returns R\+GB in hex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for a \hyperlink{classledscreen_1_1WS2812B}{W\+S2812B} L\+ED strip. 
+
+Adds base functionality for writing certain colours to certain leds on the strip. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classledscreen_1_1WS2812B_aad8aa07db255de9439972e7e5689836d}\label{classledscreen_1_1WS2812B_aad8aa07db255de9439972e7e5689836d}} 
+\index{ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}!W\+S2812B@{W\+S2812B}}
+\index{W\+S2812B@{W\+S2812B}!ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}}
+\subsubsection{\texorpdfstring{W\+S2812\+B()}{WS2812B()}}
+{\footnotesize\ttfamily ledscreen\+::\+W\+S2812\+B\+::\+W\+S2812B (\begin{DoxyParamCaption}\item[{hwlib\+::pin\+\_\+out \&}]{pin,  }\item[{const unsigned int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for base \hyperlink{classledscreen_1_1WS2812B}{W\+S2812B} class. 
+
+Requires correct hwlib-\/style gpio pin that the ledstrip is connected to. As well as the number of leds/length. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classledscreen_1_1WS2812B_a6a2ebfd923258e9e23d278ff41d875bf}\label{classledscreen_1_1WS2812B_a6a2ebfd923258e9e23d278ff41d875bf}} 
+\index{ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}!draw@{draw}}
+\index{draw@{draw}!ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ledscreen\+::\+W\+S2812\+B\+::draw (\begin{DoxyParamCaption}\item[{unsigned int}]{pos,  }\item[{int}]{rgb\+Hex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Basic draw function for rgb\+Hex values. 
+
+Checks min and max values, and converts rgb\+Hex to grb\+Hex as used by the ledstrip. Then adds colour data to the draw-\/buffer. Requires a \hyperlink{classledscreen_1_1WS2812B_ad30d0950ef865d72ebe2a0b0fe1399e2}{flush()} call to actually render. \mbox{\Hypertarget{classledscreen_1_1WS2812B_a500df20b730204ccc9ab7a79bbf6b5d4}\label{classledscreen_1_1WS2812B_a500df20b730204ccc9ab7a79bbf6b5d4}} 
+\index{ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}!draw@{draw}}
+\index{draw@{draw}!ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ledscreen\+::\+W\+S2812\+B\+::draw (\begin{DoxyParamCaption}\item[{unsigned int}]{pos,  }\item[{int}]{R,  }\item[{int}]{G,  }\item[{int}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Basic draw function for R\+GB values. 
+
+Checks min and max values, and converts R\+GB to grb\+Hex as used by the ledstrip.\+Then adds colour data to the draw-\/buffer. Requires a \hyperlink{classledscreen_1_1WS2812B_ad30d0950ef865d72ebe2a0b0fe1399e2}{flush()} call to actually render. \mbox{\Hypertarget{classledscreen_1_1WS2812B_ad30d0950ef865d72ebe2a0b0fe1399e2}\label{classledscreen_1_1WS2812B_ad30d0950ef865d72ebe2a0b0fe1399e2}} 
+\index{ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}!flush@{flush}}
+\index{flush@{flush}!ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void ledscreen\+::\+W\+S2812\+B\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Flushes draw-\/buffer to ledstrip. 
+
+Flushes the draw-\/buffer colour data (in grb\+Hex) to the ledstrip using bitshifting and the one() and zero() functions, then call reset() for the reset/end of frame data. \mbox{\Hypertarget{classledscreen_1_1WS2812B_a79e2b0da57c6ff10a95de5751d97d342}\label{classledscreen_1_1WS2812B_a79e2b0da57c6ff10a95de5751d97d342}} 
+\index{ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}!get@{get}}
+\index{get@{get}!ledscreen\+::\+W\+S2812B@{ledscreen\+::\+W\+S2812B}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily virtual int ledscreen\+::\+W\+S2812\+B\+::get (\begin{DoxyParamCaption}\item[{const unsigned int \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Getter for pixel colour values. Takes pixel index. Returns R\+GB in hex. 
+
+Allows you to get the colour value of a specific pixel. Useful for applications that want to use the colour data, so that they dont need to keep a copy themselves. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ledstrip_8hpp}{ledstrip.\+hpp}\end{DoxyCompactItemize}

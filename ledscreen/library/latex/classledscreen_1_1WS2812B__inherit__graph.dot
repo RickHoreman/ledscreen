@@ -1,0 +1,25 @@
+digraph "ledscreen::WS2812B"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="ledscreen::WS2812B",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="ledscreen::ledwindow_base",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classledscreen_1_1ledwindow__base.html",tooltip="Base hwlib::window based window for the WS2812B. "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="ledscreen::ledwindow\l_horizontal_bottom_left",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classledscreen_1_1ledwindow__horizontal__bottom__left.html",tooltip="Layout expansion on ledscreen::window_base. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="ledscreen::ledwindow\l_horizontal_bottom_right",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classledscreen_1_1ledwindow__horizontal__bottom__right.html",tooltip="Layout expansion on ledscreen::window_base. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="ledscreen::ledwindow\l_horizontal_top_left",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classledscreen_1_1ledwindow__horizontal__top__left.html",tooltip="Layout expansion on ledscreen::window_base. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="ledscreen::ledwindow\l_horizontal_top_right",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classledscreen_1_1ledwindow__horizontal__top__right.html",tooltip="Layout expansion on ledscreen::window_base. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="ledscreen::ledwindow\l_vertical_bottom_left",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classledscreen_1_1ledwindow__vertical__bottom__left.html",tooltip="Layout expansion on ledscreen::window_base. "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="ledscreen::ledwindow\l_vertical_bottom_right",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classledscreen_1_1ledwindow__vertical__bottom__right.html",tooltip="Layout expansion on ledscreen::window_base. "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="ledscreen::ledwindow\l_vertical_top_left",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classledscreen_1_1ledwindow__vertical__top__left.html",tooltip="Layout expansion on ledscreen::window_base. "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="ledscreen::ledwindow\l_vertical_top_right",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classledscreen_1_1ledwindow__vertical__top__right.html",tooltip="Layout expansion on ledscreen::window_base. "];
+}

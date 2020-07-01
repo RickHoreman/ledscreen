@@ -1,0 +1,74 @@
+\hypertarget{classledscreen_1_1ledwindow__base}{}\section{ledscreen\+:\+:ledwindow\+\_\+base Class Reference}
+\label{classledscreen_1_1ledwindow__base}\index{ledscreen\+::ledwindow\+\_\+base@{ledscreen\+::ledwindow\+\_\+base}}
+
+
+Base hwlib\+::window based window for the \hyperlink{classledscreen_1_1WS2812B}{W\+S2812B}.  
+
+
+
+
+{\ttfamily \#include $<$ledwindow.\+hpp$>$}
+
+
+
+Inheritance diagram for ledscreen\+:\+:ledwindow\+\_\+base\+:
+% FIG 0
+
+
+Collaboration diagram for ledscreen\+:\+:ledwindow\+\_\+base\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classledscreen_1_1ledwindow__base_aabe3e38cf9ec10d481d6e4eba5fa6c86}{ledwindow\+\_\+base} (const hwlib\+::xy \&size, hwlib\+::pin\+\_\+out \&pin)
+\begin{DoxyCompactList}\small\item\em Constructor for base ledwindow class. \end{DoxyCompactList}\item 
+void \hyperlink{classledscreen_1_1ledwindow__base_ab64f6d49e338937277579e3b4d74c363}{flush} () override
+\begin{DoxyCompactList}\small\item\em Flushes internal draw buffer to ledstrip. \end{DoxyCompactList}\item 
+int \hyperlink{classledscreen_1_1ledwindow__base_a3d31f2ab0eccbf96c5af2082a39e90c6}{get} (const hwlib\+::xy \&pos)
+\begin{DoxyCompactList}\small\item\em Getter function to get colour values from internal draw buffer using hwlib\+::xy coords. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base hwlib\+::window based window for the \hyperlink{classledscreen_1_1WS2812B}{W\+S2812B}. 
+
+Adds base functionality of hwlib\+::window to the \hyperlink{classledscreen_1_1WS2812B}{W\+S2812B} so it can easily be used as a screen. This version only supports length x 1 as dimensions. See hwlib\+::window documentation for information on how to use various write functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classledscreen_1_1ledwindow__base_aabe3e38cf9ec10d481d6e4eba5fa6c86}\label{classledscreen_1_1ledwindow__base_aabe3e38cf9ec10d481d6e4eba5fa6c86}} 
+\index{ledscreen\+::ledwindow\+\_\+base@{ledscreen\+::ledwindow\+\_\+base}!ledwindow\+\_\+base@{ledwindow\+\_\+base}}
+\index{ledwindow\+\_\+base@{ledwindow\+\_\+base}!ledscreen\+::ledwindow\+\_\+base@{ledscreen\+::ledwindow\+\_\+base}}
+\subsubsection{\texorpdfstring{ledwindow\+\_\+base()}{ledwindow\_base()}}
+{\footnotesize\ttfamily ledscreen\+::ledwindow\+\_\+base\+::ledwindow\+\_\+base (\begin{DoxyParamCaption}\item[{const hwlib\+::xy \&}]{size,  }\item[{hwlib\+::pin\+\_\+out \&}]{pin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for base ledwindow class. 
+
+Requires size as xy coordinates (for a 12x25 window x=12 and y=25) and correct hwlib-\/style gpio pin that the ledstrip is connected. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classledscreen_1_1ledwindow__base_ab64f6d49e338937277579e3b4d74c363}\label{classledscreen_1_1ledwindow__base_ab64f6d49e338937277579e3b4d74c363}} 
+\index{ledscreen\+::ledwindow\+\_\+base@{ledscreen\+::ledwindow\+\_\+base}!flush@{flush}}
+\index{flush@{flush}!ledscreen\+::ledwindow\+\_\+base@{ledscreen\+::ledwindow\+\_\+base}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void ledscreen\+::ledwindow\+\_\+base\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Flushes internal draw buffer to ledstrip. 
+
+Simply calls \hyperlink{classledscreen_1_1WS2812B_ad30d0950ef865d72ebe2a0b0fe1399e2}{W\+S2812\+B\+::flush()} to actually show what you drew on the ledstrip. \mbox{\Hypertarget{classledscreen_1_1ledwindow__base_a3d31f2ab0eccbf96c5af2082a39e90c6}\label{classledscreen_1_1ledwindow__base_a3d31f2ab0eccbf96c5af2082a39e90c6}} 
+\index{ledscreen\+::ledwindow\+\_\+base@{ledscreen\+::ledwindow\+\_\+base}!get@{get}}
+\index{get@{get}!ledscreen\+::ledwindow\+\_\+base@{ledscreen\+::ledwindow\+\_\+base}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily int ledscreen\+::ledwindow\+\_\+base\+::get (\begin{DoxyParamCaption}\item[{const hwlib\+::xy \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter function to get colour values from internal draw buffer using hwlib\+::xy coords. 
+
+Allows you to get the colour value of a specific pixel. Useful for applications that want to use the colour data, so that they dont need to keep a copy themselves. Returns zero if coords out of bounds. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ledwindow_8hpp}{ledwindow.\+hpp}\end{DoxyCompactItemize}

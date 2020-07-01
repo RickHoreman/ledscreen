@@ -1,0 +1,6 @@
+
+These demos were mostly made during development of the library, with the purpose of testing things as they were made.
+By no means are these demos a fully encompassing overview of the library. Make sure to check out the doxygen documentation.
+
+The 300 leds tests demo in particular can be very useful to make sure your hardware is up to speed for what you want to use it for.
+The 'colour test' demo can also be very useful, as it allowes you to fairly easily see what certain colour values will end up looking like.
